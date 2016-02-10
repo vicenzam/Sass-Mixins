@@ -1,0 +1,40 @@
+*,:after,:before{
+  margin: 0;
+  padding: 0;   
+  box-sizing: border-box;
+
+}
+
+@mixin img-estilos($ancho, $borde, $color){
+	width: $ancho;
+	border: solid $borde $color;
+}
+
+div{
+	width: 100%;
+	margin: 15px 0;
+}
+
+img{
+	display: block;
+	margin: 0 auto;
+}
+
+
+img.img-big{
+	@include img-estilos(80%, 2px, black);
+
+	&:hover{
+		border-color: lighten(black,50%);
+	}
+}
+
+img.img-small{
+	@include img-estilos(50%, 4px, orange);
+
+	&:hover{
+		border-color: darken(orange,30%);
+	}
+}
+
+

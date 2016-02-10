@@ -1,0 +1,33 @@
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 100%;
+  margin: 15px 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+img.img-big {
+  width: 80%;
+  border: solid 2px black;
+}
+
+img.img-big:hover {
+  border-color: gray;
+}
+
+img.img-small {
+  width: 50%;
+  border: solid 4px orange;
+}
+
+img.img-small:hover {
+  border-color: #664200;
+}
